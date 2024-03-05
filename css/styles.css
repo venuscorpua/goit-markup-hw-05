@@ -724,6 +724,21 @@ img {
   fill: #f4f4fd;
 }
 
+.input-form:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-close-btn:hover .icon-close,
+.modal-close-btn:focus .icon-close {
+  fill: #ffffff;
+}
+
 .input-checkbox {
   margin-bottom: 24px;
 }
