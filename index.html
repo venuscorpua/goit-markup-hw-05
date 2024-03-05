@@ -476,7 +476,114 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="subscribe-title">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="subscribe-form-label" for="footer-email">
+              <input
+                type="email"
+                class="input-subscribe"
+                placeholder="E-mail"
+                id="footer-email"
+                name="subscribe-email"
+              />
+            </label>
+            <button type="submit" class="button-subscribe">
+              Subscribe
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form action="" class="modal-form">
+          <div class="modal-input">
+            <lable class="lable-form">Name</lable>
+            <div class="modal-input-container">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                required=""
+                autofocus=""
+                class="input-form"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input">
+            <lable class="lable-form">Phone</lable>
+            <div class="modal-input-container">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                required=""
+                class="input-form"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input">
+            <lable class="lable-form">Email</lable>
+            <div class="modal-input-container">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                required=""
+                class="input-form"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input-comment">
+            <label for="user-comment" class="lable-form">Comment</label>
+            <textarea
+              class="input-form comment"
+              name="user-comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="input-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+              class="modal-privacy-checkbox visually-hidden"
+            />
+            <label for="user-privacy" class="modal-privacy-agree">
+              <span class="modal-custom-checkbox">
+                <svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="modal-privacy-link">Privacy Policy </a>
+            </label>
+          </div>
+          <button type="submit" class="modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
