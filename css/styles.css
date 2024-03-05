@@ -502,11 +502,6 @@ img {
   fill: #f4f4fd;
 }
 
-.is-hidden {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
 
 .subscribe-title {
   font-weight: 500;
@@ -520,9 +515,6 @@ img {
 .footer-subscribe-form {
   display: flex;
   gap: 24px;
-}
-
-.subscribe-form-label {
 }
 
 .input-subscribe {
